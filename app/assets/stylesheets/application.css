@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+.fp-row{
+  margin: 15px auto;
+}
+
+form{
+  float: right;
+  margin: 15px;
+}
