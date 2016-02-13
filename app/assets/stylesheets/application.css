@@ -17,7 +17,36 @@
   margin: 15px auto;
 }
 
-form{
+.search-form{
   float: right;
   margin: 15px;
+
+}
+
+.navbar-inverse{
+  /*background-image: url(http://i01.i.aliimg.com/wsphoto/v0/1971495331_1/Free-shipping-Blue-Illustration-Graffiti-Mural-Mural-wallpaper-for-walls-background.jpg);*/
+}
+.navbar{
+  margin: 0;
+}
+li{
+  color:black;
+}
+
+
+footer{
+  position:;
+	text-align: center;
+	background-color: #F6F6F6;
+  bottom: 0%;
+}
+footer ul{
+	list-style: none;
+}
+footer ul li{
+	display: inline;
+}
+
+.center-text{
+  text-align: center;
 }

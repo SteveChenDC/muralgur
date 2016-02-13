@@ -19,7 +19,7 @@
 </head>
 <body>
 <div id="wrapper">
-  <header>
+  <!-- <header>
     <div class="middle-header">
       <div class="container-fluid">
         <div class="row">
@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="lower-header">
       <nav class="navbar navbar-inverse" role="navigation">
         <div class="container-fluid">
@@ -46,19 +46,22 @@
           </div>
 
           <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><%= link_to 'Home', '#' %></li>
+            <ul class="nav navbar-nav" style="">
+              <li><%= link_to 'Home', root_path %></li>
               <li><%= link_to 'Trending', '#' %></li>
               <li><%= link_to 'Pickstick', '#' %></li>
+              <li><div class="glyphicon glyphicon-plus" style="float:right;"></div><%= link_to 'Upload', new_picture_path %></li>
+
               <!-- <li><%= link_to 'Contact', '#' %></li> -->
             </ul>
             <!-- Search bar Form -->
-            <%= form_tag("/products", method: "get", class: "search-bar") do %>
+            <%= form_tag("/products", method: "get", class: "search-bar search-form") do %>
               <%= label_tag(:q, "Search for:") %>
               <%= text_field_tag(:q) %>
               <%= submit_tag("Search") %>
               <% end %>
           </div>
+
         </div><!-- end nav container -->
       </nav><!-- navbar ends here -->
       <!-- devise login notices -->
@@ -81,7 +84,7 @@
       <li><%= link_to 'FAQ', '#' %></li> |
       <li><%= link_to 'Contact', '#' %></li>
     </ul>
-    <span>© 2015 steve chen</span>
+    <!-- <span>© 2016</span> -->
   </footer>
 </div>
 
