@@ -29,6 +29,10 @@
 .navbar{
   margin: 0;
 }
+
+.white-text{
+  color:white;
+}
 li{
   color:black;
 }
@@ -48,5 +52,13 @@ footer ul li{
 }
 
 .center-text{
+  text-align: center;
+}
+
+.description{
+  margin: 5px 15px;
+}
+
+.fp-image{
   text-align: center;
 }

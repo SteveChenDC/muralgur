@@ -1,21 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+
+<p class="picture text-center">
+  <%= image_tag(@picture.url, width: "650", class: "img-zoom", data_zoom_image: @picture.url) %>
+</p>
+
+<h1 class="text-center">
+  <!-- <strong>Mural Name:</strong> -->
   <%= @picture.name %>
-</p>
+</h1>
 
-<p>
-  <strong>Url:</strong>
-  <%= @picture.url %>
-</p>
-
-<p>
+<p class="description">
   <strong>Description:</strong>
   <%= @picture.description %>
 </p>
 
-<p>
+<p class="tags text-center">
   <strong>Tag:</strong>
   <%= @picture.tag %>
 </p>

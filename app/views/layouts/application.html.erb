@@ -50,13 +50,14 @@
               <li><%= link_to 'Home', root_path %></li>
               <li><%= link_to 'Trending', '#' %></li>
               <li><%= link_to 'Pickstick', '#' %></li>
-              <li><div class="glyphicon glyphicon-plus" style="float:right;"></div><%= link_to 'Upload', new_picture_path %></li>
+              <li><%= link_to 'Upload', new_picture_path %></li>
 
               <!-- <li><%= link_to 'Contact', '#' %></li> -->
             </ul>
+
             <!-- Search bar Form -->
             <%= form_tag("/products", method: "get", class: "search-bar search-form") do %>
-              <%= label_tag(:q, "Search for:") %>
+              <%= label_tag(:q, "Search for:", class: "white-text") %>
               <%= text_field_tag(:q) %>
               <%= submit_tag("Search") %>
               <% end %>
@@ -78,11 +79,10 @@
 
   <footer>
     <ul>
-      <li><%= link_to 'Home', '#' %></li> |
-      <li><%= link_to 'Products', '#' %></li> |
-      <li><%= link_to 'About', '#' %></li> |
-      <li><%= link_to 'FAQ', '#' %></li> |
-      <li><%= link_to 'Contact', '#' %></li>
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'Trending', '#' %></li>
+      <li><%= link_to 'Pickstick', '#' %></li>
+      <li><%= link_to 'Upload', new_picture_path %></li>
     </ul>
     <!-- <span>© 2016</span> -->
   </footer>
