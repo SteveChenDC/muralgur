@@ -13,13 +13,20 @@
  *= require_tree .
  *= require_self
  */
+ body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
 .fp-row{
   margin: 15px auto;
 }
 
 .search-form{
   float: right;
-  margin: 15px;
+  padding-top: 15px;
 
 }
 
@@ -38,16 +45,21 @@ li{
 }
 
 
-footer{
-  position:;
-	text-align: center;
-	background-color: #F6F6F6;
-  bottom: 0%;
+.footer {
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
-footer ul{
+
+.footer ul{
 	list-style: none;
 }
-footer ul li{
+.footer ul li{
 	display: inline;
 }
 
@@ -62,3 +74,29 @@ footer ul li{
 .fp-image{
   text-align: center;
 }
+
+.full-logo-nav{
+  /*background-image: url(http://i01.i.aliimg.com/wsphoto/v0/1971495331_1/Free-shipping-Blue-Illustration-Graffiti-Mural-Mural-wallpaper-for-walls-background.jpg);*/
+
+}
+
+.width-100{
+  width: 100%;
+}
+
+.desc{
+  height:90px;
+}
+
+.carousel{
+  max-height: 550px;
+  overflow: hidden;
+}
+
+.carousel item img{
+  width: 100%;
+  height: auto;
+
+}
+
+.navbar{}

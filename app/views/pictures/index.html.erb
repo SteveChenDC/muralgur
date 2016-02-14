@@ -1,80 +1,93 @@
 <p id="notice"><%= notice %></p>
 
-
-
 <!-- Carousel start -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <%= image_tag('mural1.jpg') %>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <%= image_tag('buncha-colors.jpg') %>
+        <div class="carousel-caption">
+            <h3>20+ Murals</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag('pugs.jpg') %>
+        <div class="carousel-caption">
+            <h3>Crowdsourced</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag('goblin-aliens.jpg') %>
+        <div class="carousel-caption">
+            <h3>Updated instantly</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag('political-figure.jpg') %>
+        <div class="carousel-caption">
+            <h3>Trends</h3>
+        </div>
+      </div>
+
     </div>
 
-    <div class="item">
-      <%= image_tag('mural1.jpg') %>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Carousel end -->
+  <h1 class="text-center">Trending</h1>
+  <hr style="weight: 350; margin: 5px">
+  <div class="bottom-panel" style="margin: 10px auto">
+    <div class="row fp-row">
+      <div class="col-lg-3 fp-image" style="">
+        <%= image_tag('testmural.jpg') %>
+      </div>
+      <div class="col-lg-3 fp-image">
+        <%= image_tag('testmural.jpg') %>
+      </div>
+      <div class="col-lg-3 fp-image">
+        <%= image_tag('testmural.jpg') %>
+      </div>
+      <div class="col-lg-3 fp-image">
+        <%= image_tag('testmural.jpg') %>
+      </div>
     </div>
 
-    <div class="item">
-      <%= image_tag('mural1.jpg') %>
-    </div>
-
-    <div class="item">
-      <%= image_tag('mural1.jpg') %>
+    <div class="row fp-row">
+      <div class="col-lg-3 fp-image">
+        <%= image_tag('testmural.jpg') %>
+      </div>
+      <div class="col-lg-3 fp-image">
+        <%= image_tag('testmural.jpg') %>
+      </div>
+      <div class="col-lg-3 fp-image">
+        <%= image_tag('testmural.jpg') %>
+      </div>
+      <div class="col-lg-3 fp-image">
+        <%= image_tag('testmural.jpg') %>
+      </div>
     </div>
   </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<!-- Carousel end -->
-<h1 class="text-center">Trending</h1>
-<hr style="weight: 350; margin: 5px">
-<div class="bottom-panel" style="margin: 10px auto">
-  <div class="row fp-row">
-    <div class="col-lg-3 fp-image" style="">
-      <%= image_tag('testmural.jpg') %>
-    </div>
-    <div class="col-lg-3 fp-image">
-      <%= image_tag('testmural.jpg') %>
-    </div>
-    <div class="col-lg-3 fp-image">
-      <%= image_tag('testmural.jpg') %>
-    </div>
-    <div class="col-lg-3 fp-image">
-      <%= image_tag('testmural.jpg') %>
-    </div>
-  </div>
-
-  <div class="row fp-row">
-    <div class="col-lg-3 fp-image">
-      <%= image_tag('testmural.jpg') %>
-    </div>
-    <div class="col-lg-3 fp-image">
-      <%= image_tag('testmural.jpg') %>
-    </div>
-    <div class="col-lg-3 fp-image">
-      <%= image_tag('testmural.jpg') %>
-    </div>
-    <div class="col-lg-3 fp-image">
-      <%= image_tag('testmural.jpg') %>
-    </div>
-  </div>
-</div>
 
 <!-- <table>
   <thead>

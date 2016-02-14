@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-<div class="text-center">
+<div class="" style="margin: 0 40px">
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, {:class => 'width-100'} %>
   </div>
   <div class="field">
-    <label for="picture_url">Image URL</label><br>
-    <%= f.text_field :url %>
+    <label for="picture_url">Image URL(We recommend imgur)</label><br>
+    <%= f.text_field :url, {:class => 'width-100'} %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.text_area :description, {:class => 'width-100 desc'} %>
   </div>
   <div class="field">
     <%= f.label :tag %><br>
-    <%= f.text_field :tag %>
+    <%= f.text_field :tag, {:class => 'width-100'} %>
   </div>
   <div class="actions">
     <%= f.submit %>
