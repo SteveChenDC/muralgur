@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 <!-- Carousel start -->
 
@@ -60,7 +59,7 @@
     <div class="row fp-row" style="">
     <% @pictures.each do |picture| %>
       <div class="col-lg-3 fp-image" style="margin: 10px auto">
-        <%= image_tag(picture.url, :width => 300, :height => 260) %>
+        <%= link_to image_tag(picture.url, :width => 300, :height => 260), picture, :class => 'nil' %>
       </div>
     <% end %>
     </div>
