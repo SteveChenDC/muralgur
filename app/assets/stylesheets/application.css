@@ -73,6 +73,7 @@ li{
 
 .fp-image{
   text-align: center;
+
 }
 
 .full-logo-nav{
@@ -99,4 +100,12 @@ li{
 
 }
 
-.navbar{}
+.navbar-inverse {
+     background-color: white;
+     border-color: white;
+     color:black;
+}
+
+.navbar-nav > li > a {
+  color:black;
+}
