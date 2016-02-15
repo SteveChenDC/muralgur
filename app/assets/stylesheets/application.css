@@ -132,7 +132,7 @@ li{
 }
 
 .carousel{
-  max-height: 550px;
+  max-height: 750px;
   overflow: hidden;
 }
 
@@ -154,4 +154,12 @@ li{
 
 .black-text{
   color: black;
+}
+
+.form-wrapper{
+  margin: auto 100px;
+}
+
+.show-wrapper{
+  margin: auto 350px;
 }
