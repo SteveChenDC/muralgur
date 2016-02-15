@@ -4,7 +4,13 @@ class PicturesController < ApplicationController
   # GET /pictures
   # GET /pictures.json
   def index
-    @pictures = Picture.all
+    if params[:q]
+      search_term = params[:q]
+      @pictures = Picture.where("tag LIKE ?", "%#{search_term}%")
+      #return filtered list
+    else
+      @pictures = Picture.all
+    end
   end
 
   # GET /pictures/1
