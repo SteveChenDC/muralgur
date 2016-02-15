@@ -95,8 +95,9 @@ li{
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color:;
   text-align: center;
+  color: black;
 }
 
 .footer ul{
@@ -169,4 +170,4 @@ li{
 
 #page { position:relative;}
 #content { padding-bottom:130px;} /* FOOTER HEIGHT */
-.footer { position:absolute; bottom:0;}*/
+footer { position:absolute; bottom:0;}*/

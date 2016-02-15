@@ -52,9 +52,18 @@
     </a>
   </div>
   <!-- Carousel end -->
-  
-  <h1 class="text-center">Trending</h1>
+
+  <div class="search">
+    <h1 class="text-center">What's that mural?</h1>
+    <%= form_tag("/pictures", method: "get", style: "text-align:center", placeholder: '(That describes the mural)') do %>
+      <%= label_tag(:q, "Enter a word:") %>
+      <%= text_field_tag(:q) %>
+      <%= submit_tag("Search") %>
+      <% end %>
+
+
   <hr style="weight: 350; margin: 5px">
+  </div>
   <div class="bottom-panel" style="margin: 10px auto">
     <div class="row fp-row" style="">
     <% @pictures.each do |picture| %>
