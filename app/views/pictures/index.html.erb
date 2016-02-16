@@ -15,6 +15,7 @@
         <%= image_tag('buncha-colors.jpg') %>
         <div class="carousel-caption">
             <h2>20+ Murals</h2>
+            <p style="text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">In and around the FATVillage Arts district</p>
         </div>
       </div>
 
@@ -22,6 +23,7 @@
         <%= image_tag('pugs.jpg') %>
         <div class="carousel-caption">
             <h2>Crowdsourced</h2>
+            <p>Anyone can upload or edit!</p>
         </div>
       </div>
 
@@ -29,13 +31,15 @@
         <%= image_tag('goblin-aliens.jpg') %>
         <div class="carousel-caption">
             <h2>Updated instantly</h2>
+            <p>See the newest murals right from your desktop</p>
         </div>
       </div>
 
       <div class="item">
         <%= image_tag('political-figure.jpg') %>
         <div class="carousel-caption">
-            <h2>Trends</h2>
+            <h2>Trending murals</h2>
+            <p>Coming soon.</p>
         </div>
       </div>
 
@@ -54,7 +58,7 @@
   <!-- Carousel end -->
 
   <div class="search">
-    <h1 class="text-center">What's that mural?</h1>
+    <h2 class="text-center">What's that mural?</h2>
     <%= form_tag("/pictures", method: "get", style: "text-align:center", placeholder: '(That describes the mural)') do %>
       <%= label_tag(:q, "Enter a word:") %>
       <%= text_field_tag(:q) %>
